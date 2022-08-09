@@ -1,7 +1,8 @@
-This repository contains the models and the evaluation scripts of the ECML PKDD'22 paper:
+**This repository contains the models and the evaluation scripts of the ECML PKDD'22 paper:**
 
-**[ECML PKDD'22] No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects [[PDF]](https://arxiv.org/abs/2208.03641)**
+# No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects
 Raja Sunkara and Tie Luo 
+(**[Link to PDF](https://arxiv.org/abs/2208.03641)**)
 
 
 
@@ -9,6 +10,16 @@ Raja Sunkara and Tie Luo
 
 Convolutional neural networks (CNNs) have made resounding success in many computer vision tasks such as image classification and object detection. However, their performance degrades rapidly on tougher tasks where images are of low resolution or objects are small. In this paper, we point out that this roots in a defective yet common design in existing CNN architectures, namely the use of *strided convolution* and/or *pooling layers*, which results in a loss of fine-grained information and learning of less effective feature representations. To this end, we propose a new CNN building block called *SPD-Conv* in place of each strided convolution layer and each pooling layer (thus eliminates them altogether). SPD-Conv is comprised of a *space-to-depth* (SPD) layer followed by a *non-strided* convolution (Conv) layer, and can be applied in most if not all CNN architectures. We explain this new design under two most representative computer vision tasks: object detection and image classification. We then create new CNN architectures by applying SPD-Conv to YOLOv5 and ResNet, and empirically show that our approach significantly outperforms state-of-the-art deep learning models, especially on tougher tasks with low-resolution images and small objects.
 
+### Citation
+
+```
+@inproceedings{spd-conv2022,
+  title={No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects},
+  author={Raja Sunkara and Tie Luo},
+  booktitle={European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  year={2022},
+}
+```
 
 <!---
 <embed src="./images/yolov5-spd_final.pdf" type="application/pdf">
@@ -104,7 +115,7 @@ ResNet18-SPD model is evaluated on the TinyImageNet dataset
 cd ./../ResNet18-SPD
 ```
 
-| $\textbf{Model}$ | $\textbf{Dataset}$ | $\textbf{Top-1 accracy (\%)}$ |
+| $\textbf{Model}$ | $\textbf{Dataset}$ | $\textbf{Top-1 accuracy}$ (\%) |
 |----|:-:|:-:|
 |  [ResNet18-SPD](https://drive.google.com/drive/folders/1RqI5JELROohhxRen78W3hG6N9MMRD-6K?usp=sharing) |  TinyImageNet | 64.52|
 |  [ResNet50-SPD](https://drive.google.com/drive/folders/1RqI5JELROohhxRen78W3hG6N9MMRD-6K?usp=sharing) | CIFAR-10| 95.03 |
@@ -157,16 +168,6 @@ python test.py -weights ./weights/resnet50_spd.pth -net resnet50_spd
 $ python3 train.py -net resnet50_spd -gpu
 ```
 
-### Citations
-
-```
-@inproceedings{spd-conv2022,
-  title={No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects},
-  author={Raja Sunkara and Tony Luo},
-  booktitle={European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
-  year={2022},
-}
-```
 
 
 

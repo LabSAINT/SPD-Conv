@@ -1,10 +1,6 @@
-**This repository contains the models and the evaluation scripts of the ECML PKDD'22 paper:**
+** Source code and evaluation scripts of our [ECML PKDD'22 paper](https://arxiv.org/abs/2208.03641): **
 
-# No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects
-Raja Sunkara and Tie Luo 
-(**[Link to PDF](https://arxiv.org/abs/2208.03641)**)
-
-
+## No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects
 
 ### Abstract
 

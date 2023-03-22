@@ -1,4 +1,8 @@
-** Source code and evaluation scripts of our [ECML PKDD'22 paper](https://arxiv.org/abs/2208.03641): **
+** Source code and evaluation scripts for our ECML PKDD 2022 paper. **
+
+[Link to paper](https://link.springer.com/chapter/10.1007/978-3-031-26409-2_27)<br>
+[Direct PDF](https://link.springer.com/content/pdf/10.1007/978-3-031-26409-2_27.pdf?pdf=inline%20link)<br>
+[arXiv](https://arxiv.org/abs/2208.03641)
 
 ## No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects
 

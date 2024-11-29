@@ -1,10 +1,12 @@
-** Source code and evaluation scripts for our ECML PKDD 2022 paper. **
+### ![red](https://via.placeholder.com/15/f03c15/000000?text=+) This repository is no longer maintained. It has been relocated to <a href="https://github.com/TrustAIoT/SPD-Conv">SPD-Conv</a>, where active updates and maintenance will continue.
 
-[Link to paper](https://link.springer.com/chapter/10.1007/978-3-031-26409-2_27)<br>
-[Direct PDF](https://link.springer.com/content/pdf/10.1007/978-3-031-26409-2_27.pdf?pdf=inline%20link)<br>
-[arXiv](https://arxiv.org/abs/2208.03641)
+### This repo contains the source code and evaluation scripts for our ECML PKDD 2022 paper.
 
 ## No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects
+
+[Link to paper on publisher site](https://link.springer.com/chapter/10.1007/978-3-031-26409-2_27)<br>
+[Direct PDF from publisher](https://link.springer.com/content/pdf/10.1007/978-3-031-26409-2_27.pdf?pdf=inline%20link)<br>
+[arXiv](https://arxiv.org/abs/2208.03641)
 
 ### Abstract
 
@@ -14,10 +16,12 @@ Convolutional neural networks (CNNs) have made resounding success in many comput
 
 ```
 @inproceedings{spd-conv2022,
-  title={No More Strided Convolutions or Pooling: A New CNN Building Block for Low-Resolution Images and Small Objects},
+  title={No More Strided Convolutions or Pooling: A New {CNN} Building Block for Low-Resolution Images and Small Objects},
   author={Raja Sunkara and Tie Luo},
   booktitle={European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  month=Sep,
   year={2022},
+  pages={443-459}
 }
 ```
 
